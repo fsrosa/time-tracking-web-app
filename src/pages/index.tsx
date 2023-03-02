@@ -1,6 +1,19 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import Head from 'next/head'
+import { useTask } from '@/service/apiClient'
+import { useEffect } from 'react'
 
 export default function Home() {
+  const [{ response, data }, requestTask] = useTask();
+
+  useEffect(() => {
+    setTimeout(() => {
+      requestTask().then(() => {
+        console.log({ response, data })
+      })
+    }, 1000)
+  }, [])
+
   return (
     <>
       <Head>
