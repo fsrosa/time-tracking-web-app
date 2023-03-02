@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-import { tasks, Task } from './db'
+import { tasks, Task } from '../../models/task'
 import { v4 } from 'uuid'
 import moment from 'moment'
 
