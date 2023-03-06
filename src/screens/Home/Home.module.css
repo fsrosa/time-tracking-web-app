@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 20%;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.cardsContainer,
+.overviewContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+.emptyContainer {
+    margin: 2rem;
+}
