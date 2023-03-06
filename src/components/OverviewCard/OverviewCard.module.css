@@ -1,0 +1,46 @@
+.overviewContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+
+  box-sizing: content-box;
+
+  background-color: #F2F2F2;
+  color: #1C9521;
+
+  border-radius: 6px;
+  border: 1px solid #1C9521;
+
+  width: 100%;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.overviewItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+
+.overviewItemName {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+
+.overviewItemValue {
+  position: absolute;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: 30rem;
+}
+
+.overviewItemPercent {
+  color: black;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}

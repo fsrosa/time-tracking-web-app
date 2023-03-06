@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+
+  box-sizing: content-box;
+
+  background-color: #1C9521;
+  color: #F2F2F2;
+
+  border-radius: 6px;
+  border: 1px solid #F2F2F2;
+
+  width: 30rem;
+  height: 2rem;
+  margin: 0.5rem;
+
+  cursor: pointer;
+}
+
+.taskName {
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  margin-left: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #F2F2F2;
+}

@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin: 0.5rem;
+}
+
+.container > button {
+  background-color: #1C9521;
+  color: #F2F2F2;
+  
+  border: 1px solid #F2F2F2;
+  border-radius: 6px;
+  
+  width: 10rem;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+}
