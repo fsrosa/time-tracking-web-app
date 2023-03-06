@@ -1,5 +1,6 @@
 import { Task } from '@/models/task'
 import moment from 'moment'
+import addPlusSignToPositiveStringNumber from '../addPlusSignToPositiveStringNumber';
 
 const filterBugsAndStoriesLastWeek = (tasks: Task[], type: "BUG" | "STORY") => {
   const tasksLastWeek = tasks.filter((task) => {
@@ -24,7 +25,8 @@ const filterBugsAndStoriesLastWeek = (tasks: Task[], type: "BUG" | "STORY") => {
   });
   const tasksPreviousWeekCount = tasksPreviousWeek.length;
 
-  const percentDifference = ((tasksLastWeekCount - tasksPreviousWeekCount) / tasksPreviousWeekCount) * 100;
+  let percentDifference = (((tasksLastWeekCount - tasksPreviousWeekCount) / tasksPreviousWeekCount) * 100).toFixed(0);
+  percentDifference = addPlusSignToPositiveStringNumber(percentDifference)
 
   return { tasksLastWeekCount, tasksPreviousWeekCount, percentDifference };
 }

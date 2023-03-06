@@ -133,7 +133,7 @@ const Home = () => {
                 name="BUGs"
                 value={overviewData?.filteredBugs?.tasksLastWeekCount}
                 percent={
-                  overviewData?.filteredBugs?.percentDifference ?
+                  overviewData?.filteredBugs?.percentDifference !== "NaN" ?
                   (overviewData?.filteredBugs?.percentDifference + '%') :
                   '-'
                 }
@@ -142,7 +142,7 @@ const Home = () => {
                 name="STORYs"
                 value={overviewData?.filteredStories?.tasksLastWeekCount}
                 percent={
-                  overviewData?.filteredStories?.percentDifference ?
+                  overviewData?.filteredStories?.percentDifference !== "NaN" ?
                   (overviewData?.filteredStories?.percentDifference + '%') :
                   '-'
                 }
@@ -151,7 +151,7 @@ const Home = () => {
                 name="TOTAL"
                 value={overviewData?.filteredTasks?.tasksLastWeekCount}
                 percent={
-                  overviewData?.filteredTasks?.percentDifference ?
+                  overviewData?.filteredTasks?.percentDifference !== "NaN" ?
                   (overviewData?.filteredTasks?.percentDifference + '%') :
                   '-'
                 }
